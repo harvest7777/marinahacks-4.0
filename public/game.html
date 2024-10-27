@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gamestyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="logout">
+        <div class="logout-button"  onclick="logout()"">
+            <p>Logout</p>
+            <img src="logout.png">
+        </div>
+    </div>
+
+    <div class="play-container">
+
+        <div class="silly-info">
+            <img id="duck-sprite" src="idle.gif">
+            <p id="duckHp">HP: 100</p>
+
+        </div>
+        <div class="answerHistory-container">
+            <p>See what<br>others are<br>answering!</p>
+            <ul id="answerHistory"></ul>
+        </div>
+    </div>
+    <div class="question-stuff">
+        <p class="help">Quick! Answer the question to heal Mr. Silly!</p>
+        <p id="questionText">none</p>
+        <ul id="choicesList"></ul>
+        
+    </div>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="game.js"></script>
+
+</body>
+</html>

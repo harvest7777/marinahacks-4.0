@@ -1,0 +1,138 @@
+body
+{
+    margin: 0px;
+    font-family: 'Press Start 2P', sans-serif;
+    background-color: rgb(177, 208, 251);
+
+}
+
+.silly-info
+{
+    display: flex;   
+    margin: 10px;        
+    flex-direction: column;     
+    justify-content: center;    
+    align-items: center;       
+}
+#duck-sprite
+{
+    width: 23vw;
+    height: auto;
+}
+.duckhp
+{
+    width: 100vw;
+}
+.logout
+{
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(249, 207, 128);
+}
+.logout img
+{
+    width: 5vw;
+}
+.logout-button
+{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.logout-button p
+{
+    margin: 0;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.question-stuff
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;  
+    text-align: center;   
+
+}
+#questionText
+{
+    width: 100vw;
+    padding: 5px;
+
+}
+.question-stuff li
+{
+    text-align: left;
+}
+.question-stuff p
+{
+    font-size: 15px;
+    margin: 0px;
+    background-color: rgb(224, 231, 250);
+
+}
+
+.answerHistory-container
+{
+    height:23vw;
+    width: 10vw+5vh;
+    margin: 10px;
+}
+#answerHistory
+{
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+.answerHistory-container p
+{
+    margin-top: 10px;
+    font-size: 1.25vw;
+    text-align: center;
+}
+
+.answer-history
+{
+    list-style-type: none;
+    font-size: 1px;
+}
+.play-container
+{
+    display: flex;
+    justify-content: center;  
+    height: fit-content;
+
+}
+
+#choicesList
+{
+    list-style-type: none;
+    margin: 0;
+    font-size: 15px;
+
+}
+.choice {
+    outline: 3px rgb(59, 55, 120) solid;
+    padding: 4px;
+    margin: 8px;
+    list-style-type: none;
+    transition: transform 0.3s ease, outline-color 0.3s ease; /* Add transitions for smooth effects */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+.help
+{
+    width: 100vw;
+    padding: 10px;
+    font-size: 15px;
+}
+.choice:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+    outline-color: blue; /* Change outline color on hover */
+    background-color: rgba(0, 0, 255, 0.1); /* Light blue background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}

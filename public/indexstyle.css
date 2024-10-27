@@ -1,0 +1,77 @@
+body
+{
+    font-family: 'Press Start 2P', sans-serif;
+    background-color: rgb(177, 208, 251);
+
+}
+h1
+{
+    text-align: center;
+
+}
+#survival
+{
+    text-align: center;
+}
+.splash
+{
+    display: flex;              
+    flex-direction: column;    
+    justify-content: center;    
+    align-items: center;     
+    background-color: rgb(224, 231, 250);
+    padding-bottom: 30px;
+}
+button, input
+{
+    font-family: 'Press Start 2P', sans-serif;
+    width: 100px;
+    height:30px;
+}
+input
+{
+    width:200px;
+}
+
+
+
+form {
+    display: flex;
+    gap: 10px; /* Spacing between input and button */
+    align-items: center;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid rgb(180, 190, 240);
+    background-color: rgb(245, 248, 255); /* Slightly off-white */
+    outline: none;
+    width: 200px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: rgb(120, 140, 220); /* Color change on focus */
+}
+
+button {
+    padding: 10px 20px;
+    height: 50px;
+    border: 1px solid rgb(180, 190, 240);
+
+    background-color: rgb(120, 140, 220); /* Button background */
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: rgb(100, 120, 200); /* Darker on hover */
+}
+
+button:active {
+    transform: scale(0.95); /* Slight scaling on click */
+}
