@@ -13,7 +13,7 @@ if(!username)
 function logout()
 {
     localStorage.removeItem('username');
-    console.log('test');
+    localStorage.removeItem('answered')
     // Redirect to login page
     window.location.href = 'index.html';
 }
@@ -78,9 +78,9 @@ socket.on('newQuestionData', (curQuestionNumber, questionData) =>
                 //let everyone know if u got it right or not
                 console.log(isCorret);
                 socket.emit('userAnswer', username, isCorret);
+                //tell user if they got it right or not
                 questionText.textContent=result.textContent;
                 choicesList.innerHTML='';
-                //tell user if they got it right or not
 
             })
 

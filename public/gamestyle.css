@@ -79,6 +79,8 @@ body
 .answerHistory-container
 {
     height:23vw;
+    max-height:23vw;
+    overflow-y: auto;
     width: 10vw+5vh;
     margin: 10px;
 }

@@ -190,12 +190,12 @@ setInterval(() => {
       {
         let endDate = new Date();
         let diff = endDate-startDate;
-        timeAlive = Math.floor(diff / (1000));
+        timeAlive = Math.floor(diff / (60*1000));
         io.emit('gameOver', timeAlive);
       } 
   }
 
-}, 5000);
+}, 300000);
 
 //every 5 seconds, send out the new question data
 //the current question number will be tracked. all user entries will be compared with the answer to
@@ -208,7 +208,7 @@ setInterval(() => {
     io.emit('newQuestionData',curQuestionNumber, duckQuizData[(curQuestionNumber)%numberOfQuestions]);
     console.log('sent out new question! question#: ', curQuestionNumber);
   }
-}, 10000);
+}, 300000);
 
 
 app.get('/', (req, res) => {
@@ -251,7 +251,7 @@ io.on('connection', (socket) => {
         {
           let endDate = new Date();
           let diff = endDate-startDate;
-          timeAlive = Math.floor(diff / (1000));
+          timeAlive = Math.floor(diff / (60*1000));
           end=true;
           io.emit('gameOver', timeAlive);
         } 
